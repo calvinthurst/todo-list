@@ -18,46 +18,56 @@
 
 <body>
   <header>
-
-  </header>
-  <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app">
-          </div>
-        </div>
+    <section class="row m-0">
+      <div class="col-2 m-3 quote-shadow">
+        <h4>Image by</h4>
+        <h4 id="image-by"></h4>
       </div>
-    </div>
+      <div class="col-1 offset-8 card rounded text-light bg-dark opacity-75 my-4 d-flex head-corner text-center"
+        id="weather-info">
+        <!-- <h1>
+          <i class="mdi mdi-cloud"></i>
+        </h1> -->
+      </div>
+    </section>
+  </header>
+  <main class="row align-items-center m-0">
+    <section class="row m-0 justify-content-center">
+      <div class="col-6 ">
+        <h1 class="text-center quote-shadow clock" id="clock"></h1>
+      </div>
+    </section>
   </main>
   <footer>
-    <section class="row m-0 justify-content-start">
-      <div class="col-6 offset-1 text-light text-center ">
-        <h5 id="quote" class="quote">repeat or copy out (a group of words from a text or speech),
+    <section class="row m-0 justify-content-evenly " id="quoteArea">
+      <!-- <div class="col-6 offset-1 text-light text-center fixed-bottom my-5 quote-shadow">
+        <h4 id="quote" class="quote">repeat or copy out (a group of words from a text or speech),
           typically with an
           indication that
-          one is not the original author or speaker.</h5>
+          one is not the original author or speaker.</h4>
         <h4 id="quote-author" class="quote-author">google</h4>
-      </div>
-      <div class="col-3 offset-1">
+      </div> -->
+    </section>
+    <section class="row m-0">
+      <div class="col-4 offset-7 ">
         <section class=" opacity-75 bg-dark card row justify-content-evenly mb-3">
-          <div class="d-flex flex-wrap text-light fw-bold align-items-center justify-content-between">
-            <h5 class=" col-4">Todos</h5>
+          <div class="container d-flex flex-wrap text-light fw-bold align-items-center justify-content-between">
+            <h5 class=" col-4">My To-Do list</h5>
             <a class="btn" data-bs-toggle="collapse" href="#todo-list" role="button" aria-expanded="false"
               aria-controls="collapse">
               <i class="mdi mdi-arrow-up text-light fw-bold"></i>
             </a>
             <h5 id="todo-count"></h5>
             <div class="col-12">
-              <div class="collapse bg-dark row fw-light" id="todo-list">
+              <div class="collapse bg-dark row fw-light " id="todo-list">
                 <!-- <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="completed"
-                onchange="app.todoController.todoCompleted()">
-                <input type="text" name="description" id="description" class="form-check-label" for="completed">First
-                checkbox</input>
-                <button class="btn btn-outline-light" onclick="app.todoController.deleteTodo()"><i
-                  class="mdi mdi-trash-can-outline"></i></button>
-                </li> -->
+                  <input class="form-check-input me-1" type="checkbox" value="" id="completed"
+                  onchange="app.todoController.todoCompleted()">
+                  <input type="text" name="description" id="description" class="form-check-label" for="completed">First
+                  checkbox</input>
+                  <button class="btn btn-outline-light" onclick="app.todoController.deleteTodo()"><i
+                    class="mdi mdi-trash-can-outline"></i></button>
+                  </li> -->
               </div>
             </div>
           </div>
@@ -67,6 +77,7 @@
           </form>
         </section>
       </div>
+    </section>
   </footer>
 
 

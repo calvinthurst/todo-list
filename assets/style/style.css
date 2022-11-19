@@ -1,12 +1,41 @@
 /* BASIC STYLES HERE */
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote-shadow {
+  color: #dadada;
+  text-shadow: 2px 2px 5px #313030;
+  opacity: 80%;
+}
+
+.weather {
+  cursor: pointer;
+
+}
+
+.head-corner {
+  user-select: none;
+}
+
+.clock {
+  font-size: 11vh;
+  font-weight: 700;
+  align-items: center;
+  opacity: 80%;
+}
+
 .quote-author {
   visibility: hidden;
   opacity: 0;
-  transition: .3s ease;
-  height: -90%;
+  transition: .5s ease-in-out;
 }
 
 .quote:hover+.quote-author {
   visibility: visible;
   opacity: 1;
+
 }

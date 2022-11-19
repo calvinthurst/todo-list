@@ -1,11 +1,10 @@
-import { Value } from "./Models/Value.js"
+
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 import { loadState } from "./Utils/Store.js"
 
 class AppState extends EventEmitter {
-  /** @type {import('./Models/Value').Value[]} */
-  values = loadState('values', [Value])
+
 
   /** @type {import('./Models/ImageModel.js').Image|null} */
 
@@ -14,6 +13,11 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/TodoModel.js').Todo[]} */
 
   todos = []
+
+  /** @type {import('./Models/QuoteModel.js').Quote|null} */
+  quote = null
+  /** @type {import('./Models/WeatherModel.js').Weather|null} */
+  weathers = null
 }
 
 export const appState = new Proxy(new AppState(), {

@@ -12,8 +12,6 @@ class ImageService {
     appState.image = res.data
     console.log(appState.image);
     appState.emit('image')
-
-    // console.log()
   }
 
 }
