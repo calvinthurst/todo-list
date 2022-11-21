@@ -11,17 +11,12 @@ export class Weather {
     <h1>
     <h1 class="weather" onclick="app.weatherController.changeTemp()" id="temp">${this.computeWeather}</h1>
     <h4 class="weather">${this.weather[0].description}<h4>
-    <h1 class="weather"><i class="opacity-100"><img src="https://openweathermap.org/img/wn/${this.weatherIcon}.png" alt=""></i><h1>
+    <h1 class="weather"><i class="opacity-100"><img src="https://openweathermap.org/img/wn/${this.weather[0].icon}.png" alt=""></i><h1>
     <h4>Boise ⁜</h4>
   </h1>
     `
   }
 
-
-
-  get weatherIcon() {
-    return this.weather[0].icon
-  }
 
   get computeWeather() {
     if (this.bool == false) {
