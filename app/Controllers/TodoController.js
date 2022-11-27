@@ -14,7 +14,7 @@ function _drawTodos() {
 function _drawTotal() {
   let todo = appState.todos
   let completedTodo = todo.filter(t => t.completed == true)
-  setText('todo-count', `${completedTodo.length}/${todo.length}`)
+  setText('todo-count', `Completed ${completedTodo.length}/${todo.length}`)
 }
 
 

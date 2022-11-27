@@ -1,0 +1,65 @@
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.font-rubik {
+  font-family: 'Rubik Microbe', cursive;
+}
+
+.needle {
+  background-color: rgb(51, 51, 51);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 4px;
+  box-shadow: -2px 0px 3px #474747;
+  transform-origin: bottom center;
+  transition: all .2s ease-in;
+}
+
+.time {
+  color: #9d9d9dc2;
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 100px;
+}
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 80px;
+  background-color: rgb(255, 113, 87);
+}
+
+.center-point {
+  background-color: rgb(255, 73, 41);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.center-point:after {
+  background-color: rgb(39, 39, 39);
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

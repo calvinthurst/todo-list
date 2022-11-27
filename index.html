@@ -11,8 +11,12 @@
     integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/clock.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
   <title>todo-list</title>
 </head>
 
@@ -20,8 +24,9 @@
   <header>
     <section class="row m-0">
       <div class="col-2 m-3 quote-shadow">
-        <h4>Image by</h4>
-        <h4 id="image-by"></h4>
+        <h5>Image by</h5>
+        <h5 id="image-by">
+        </h5>
       </div>
       <div class="col-1 offset-8 card rounded text-light bg-dark opacity-75 my-4 d-flex head-corner text-center"
         id="weather-info">
@@ -31,10 +36,16 @@
       </div>
     </section>
   </header>
-  <main class="row align-items-center m-0">
-    <section class="row m-0 justify-content-center">
-      <div class="col-6 ">
-        <h1 class="text-center quote-shadow clock" id="clock"></h1>
+  <main>
+    <section class="d-flex align-items-center m-0 justify-content-center align-items-center">
+      <div class="d-flex ">
+        <section class="clock d-flex justify-content-between ">
+          <div class="needle hour"></div>
+          <div class="needle minute"></div>
+          <div class="needle second"></div>
+          <div class="center-point"></div>
+        </section>
+        <div class="time font-rubik"></div>
       </div>
     </section>
   </main>

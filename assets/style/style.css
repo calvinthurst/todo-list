@@ -8,9 +8,9 @@ body {
 }
 
 .quote-shadow {
-  color: #dadada;
+  color: #ededffbd;
   text-shadow: 2px 2px 5px #313030;
-  opacity: 80%;
+
 }
 
 .weather {
@@ -22,14 +22,8 @@ body {
   user-select: none;
 }
 
-.clock {
-  font-size: 11vh;
-  font-weight: 700;
-  align-items: center;
-  opacity: 80%;
-}
-
 .quote-author {
+  color: #ededffbd;
   visibility: hidden;
   opacity: 0;
   transition: .5s ease-in-out;
