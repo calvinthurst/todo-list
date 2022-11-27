@@ -15,7 +15,6 @@ class WeatherService {
     const res = await WeatherApi.get()
     appState.weathers = new Weather(res.data)
     console.log(appState.weathers);
-
   }
 
 }
